@@ -136,3 +136,15 @@
       inside the card.
 - [x] Re-run build, lint, static copy scan, HTTPS probe, service health, and
       Chromium CDP overflow check for the Japanese provider card.
+
+## Production Launch
+
+- [x] Initialize local git repository on `main`.
+- [x] Create private GitHub repository `nakamotosai/doula`.
+- [x] Push source to GitHub.
+- [x] Create Cloudflare Pages project `doula` with GitHub source sync.
+- [x] Add `doula.saaaai.com` as the Pages custom domain.
+- [x] Add Cloudflare DNS CNAME for `doula.saaaai.com`.
+- [ ] Verify Cloudflare Pages production deployment.
+- [ ] Verify `https://doula.saaaai.com/` returns the current homepage.
+- [ ] Update README with final production verification status.

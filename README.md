@@ -13,10 +13,12 @@ caregivers.
 - Active milestone: `M0-demo-homepage`
 - Current product surface: localized single-page demo homepage in English,
   Traditional Chinese, and Japanese
+- Private GitHub repo: `https://github.com/nakamotosai/doula`
+- Production target: `https://doula.saaaai.com/`
+- Cloudflare Pages project: `doula`
 - User preview target: `https://vps-jp.tail4b5213.ts.net:5177/`
-- Verification status: latest provider, care-category, and FAQ polish pass is
-  implemented and verified by build/lint/static scan, HTTPS preview probes,
-  service health, and non-screenshot Chromium CDP checks
+- Verification status: production launch is in progress after the final local
+  build/lint/static scan and HTTPS preview verification passes
 
 ## Active Milestone
 
@@ -148,6 +150,10 @@ M0 is complete only when:
 
 ## Current Preview
 
+- Production URL: `https://doula.saaaai.com/`
+- Cloudflare Pages URL: `https://doula-bw3.pages.dev/`
+- GitHub source: `https://github.com/nakamotosai/doula`
+- Cloudflare Pages project: `doula`
 - HTTPS Tailnet preview: `https://vps-jp.tail4b5213.ts.net:5177/`
 - Preview service: `systemctl --user status doula-preview.service`
 - Preview backend: Python static server on `127.0.0.1:5176`, serving `dist/`
