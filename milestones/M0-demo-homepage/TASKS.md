@@ -148,3 +148,12 @@
 - [x] Verify Cloudflare Pages production deployment.
 - [x] Verify `https://doula.saaaai.com/` returns the current homepage.
 - [x] Update README with final production verification status.
+
+## Project Closeout
+
+- [x] Add Doula to the public `saaaai.com` project list.
+- [x] Deploy and verify the updated `saaaai.com` project list.
+- [x] Add README `接手提示` with current gate, production entry, next step,
+      paused scope, verification, and residual risk.
+- [x] Mark the project as paused after M0 delivery.
+- [x] Sync project planner state for closeout.

@@ -10,7 +10,8 @@ caregivers.
 - Lifecycle: `bootstrap`
 - Track: `delivery-track`
 - Strength: `full` long-project shell, one active milestone
-- Active milestone: `M0-demo-homepage`
+- Project status: `paused`, M0 demo delivered and awaiting feedback
+- Active milestone: `M0-demo-homepage` completed
 - Current product surface: localized single-page demo homepage in English,
   Traditional Chinese, and Japanese
 - Private GitHub repo: `https://github.com/nakamotosai/doula`
@@ -19,7 +20,7 @@ caregivers.
 - User preview target: `https://vps-jp.tail4b5213.ts.net:5177/`
 - Verification status: production launch is complete and verified through
   GitHub private repo sync, Cloudflare Pages deployment, DNS/custom-domain
-  activation, and production HTTPS probes
+  activation, production HTTPS probes, and saaaai.com project-list inclusion
 
 ## Active Milestone
 
@@ -123,6 +124,8 @@ Latest Open Design feedback fixes:
 - Production launch created private GitHub repo `nakamotosai/doula`, connected
   Cloudflare Pages project `doula` to the GitHub `main` branch, and bound
   `doula.saaaai.com` as the production domain.
+- Project closeout added Doula to the public `saaaai.com` project list with a
+  live link to `https://doula.saaaai.com/`.
 
 ## Content Rule
 
@@ -202,3 +205,33 @@ M0 is complete only when:
   GitHub repository privacy/source checks, custom-domain activation, DNS CNAME
   checks, HTTPS probes for production English/Traditional Chinese/Japanese
   routes, and non-screenshot Chromium checks on the production domain.
+- Closeout was verified with the public `saaaai.com` project-list deployment,
+  static JS checks, rebuilt CJK font subset, and a Chromium check confirming
+  the Doula row links to `https://doula.saaaai.com/`.
+
+## 接手提示
+
+- Active track: `delivery-track`.
+- Active milestone: `M0-demo-homepage` is complete.
+- Current gate: `PASS`, project paused after production launch and closeout.
+- Current focus: demo homepage for a Western-style family care and doula
+  marketplace, localized in English, Traditional Chinese, and Japanese.
+- Production entry: `https://doula.saaaai.com/`.
+- Source repo: private GitHub repository `https://github.com/nakamotosai/doula`.
+- Deployment: Cloudflare Pages project `doula`, GitHub `main` branch sync,
+  build command `npm run build`, output directory `dist`.
+- Public index: `saaaai.com` project list includes `Doula` and links to
+  `https://doula.saaaai.com/`.
+- Next step: wait for user or client feedback; resume with a new milestone for
+  requested copy/design changes, real provider data, onboarding, backend, or
+  conversion tracking.
+- Pause reason: user confirmed the current demo is good enough for now.
+- Do not do yet: accounts, payments, provider onboarding backend, database,
+  medical claims, production forms, or dynamic localization service.
+- Key specs and tasks: `milestones/M0-demo-homepage/SPEC.md`,
+  `milestones/M0-demo-homepage/PLAN.md`, and
+  `milestones/M0-demo-homepage/TASKS.md`.
+- Recent verification: production `doula.saaaai.com` and `saaaai.com` listing
+  both return HTTP 200 and passed non-screenshot Chromium checks.
+- Residual risk: this is still a static demo; CTA/form flows are illustrative
+  anchors and do not submit real data.
