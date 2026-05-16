@@ -145,6 +145,6 @@
 - [x] Create Cloudflare Pages project `doula` with GitHub source sync.
 - [x] Add `doula.saaaai.com` as the Pages custom domain.
 - [x] Add Cloudflare DNS CNAME for `doula.saaaai.com`.
-- [ ] Verify Cloudflare Pages production deployment.
-- [ ] Verify `https://doula.saaaai.com/` returns the current homepage.
-- [ ] Update README with final production verification status.
+- [x] Verify Cloudflare Pages production deployment.
+- [x] Verify `https://doula.saaaai.com/` returns the current homepage.
+- [x] Update README with final production verification status.

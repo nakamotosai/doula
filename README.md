@@ -17,8 +17,9 @@ caregivers.
 - Production target: `https://doula.saaaai.com/`
 - Cloudflare Pages project: `doula`
 - User preview target: `https://vps-jp.tail4b5213.ts.net:5177/`
-- Verification status: production launch is in progress after the final local
-  build/lint/static scan and HTTPS preview verification passes
+- Verification status: production launch is complete and verified through
+  GitHub private repo sync, Cloudflare Pages deployment, DNS/custom-domain
+  activation, and production HTTPS probes
 
 ## Active Milestone
 
@@ -119,6 +120,9 @@ Latest Open Design feedback fixes:
   and answers that expand and collapse with a restrained transition.
 - Latest Japanese provider-card fix constrains the desktop title row so review
   counts remain inside the card at narrower desktop widths.
+- Production launch created private GitHub repo `nakamotosai/doula`, connected
+  Cloudflare Pages project `doula` to the GitHub `main` branch, and bound
+  `doula.saaaai.com` as the production domain.
 
 ## Content Rule
 
@@ -194,3 +198,7 @@ M0 is complete only when:
 - Latest Japanese provider overflow fix was verified with build, lint, static
   copy scan, HTTPS Japanese probe, service health, and a Chromium CDP overflow
   check at a 932px desktop viewport.
+- Production launch was verified with Cloudflare Pages deployment status,
+  GitHub repository privacy/source checks, custom-domain activation, DNS CNAME
+  checks, HTTPS probes for production English/Traditional Chinese/Japanese
+  routes, and non-screenshot Chromium checks on the production domain.
