@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --paper: #f6efe4;
+  --paper-warm: #fbf7ef;
+  --surface: #fffdf8;
+  --surface-soft: #f0e8dc;
+  --surface-card: rgba(255, 253, 248, 0.82);
+  --shadow-soft: 0 22px 58px rgba(72, 57, 42, 0.09);
+  --shadow-float: 0 26px 70px rgba(72, 57, 42, 0.12);
+  --sage-pale: #e8eddf;
+  --sage-soft: #eef2e8;
+  --ink: #201d18;
+  --ink-soft: #51483d;
+  --muted: #958d83;
+  --muted-strong: #6d655b;
+  --border: #d9d1c4;
+  --clay: #d4825d;
+  --clay-dark: #bd6f4d;
+  --clay-muted: #977058;
+  --olive: #4d522f;
+  --olive-light: #5f653d;
+  --sage: #7d8778;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  color: var(--ink);
+  background: var(--paper);
+  font-family: var(--sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background:
+    linear-gradient(180deg, var(--paper-warm) 0%, var(--paper) 42%, #f8f2e9 100%);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+::selection {
+  color: #fff;
+  background: var(--olive);
+}
