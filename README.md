@@ -1,237 +1,104 @@
-# Doula
+# Doula Demo Site
 
-Doula is a demo homepage for a trusted marketplace and concierge matching
-platform that helps families find vetted birth doulas, postpartum doulas,
-night nannies, newborn care specialists, and culturally fluent postpartum
-caregivers.
+This repository contains a front-end demo website for a doula, postpartum care,
+newborn care, and night nanny marketplace concept.
 
-## Current State
+The site is intended for design review, product discussion, and early client
+reference only. It is not a live care platform.
 
-- Lifecycle: `bootstrap`
-- Track: `delivery-track`
-- Strength: `full` long-project shell, one active milestone
-- Project status: `paused`, M0 demo delivered and awaiting feedback
-- Active milestone: `M0-demo-homepage` completed
-- Current product surface: localized single-page demo homepage in English,
-  Traditional Chinese, and Japanese
-- Private GitHub repo: `https://github.com/nakamotosai/doula`
-- Production target: `https://doula.saaaai.com/`
-- Cloudflare Pages project: `doula`
-- User preview target: `https://vps-jp.tail4b5213.ts.net:5177/`
-- Verification status: production launch is complete and verified through
-  GitHub private repo sync, Cloudflare Pages deployment, DNS/custom-domain
-  activation, production HTTPS probes, and saaaai.com project-list inclusion
+## Demo Notice
 
-## Active Milestone
+This project is a static demo. It shows what a future matching website could
+look like, including example service sections, provider cards, calls to action,
+FAQ content, and multilingual page copy.
 
-`milestones/M0-demo-homepage/`
+Important limitations:
 
-M0 delivers a polished, browsable homepage matching the selected GPTIMG
-reference image:
+- The website does not accept real bookings.
+- The website does not process payments.
+- The website does not create user accounts.
+- The website does not store submitted family or caregiver information.
+- The provider profiles, reviews, availability, prices, and service details are
+  sample content for demonstration purposes.
+- Images and names may be generated or fictional and should not be treated as
+  real caregiver profiles.
 
-`/home/ubuntu/codex/gptimg/artifacts/requests/gptimg-20260516T055001Z-b788af4c/00029173-result-20260516-145151-4fd04214.png`
+## Basic Disclaimer
 
-## Product Direction
+This demo does not provide medical, legal, employment, immigration, tax, or
+childcare compliance advice.
 
-The first version should feel like a premium Western family-care marketplace:
-warm, calm, trustworthy, and easy to scan. The homepage is not a generic
-maternal wellness landing page. It must communicate that the family can start a
-real matching flow, compare providers, understand care categories, and trust the
-platform's vetting and scope boundaries.
+Any real production version would need appropriate business review before
+launch, including service terms, privacy policy, caregiver screening process,
+local compliance requirements, data handling, consent language, and contact
+workflow setup.
 
-## Design Baseline
+Care described on the demo site should be understood as non-medical family
+support unless a future production operator separately verifies and discloses
+provider qualifications, scope of service, and applicable legal requirements.
 
-- Palette: pale beige, pale clay-orange, and muted sage/olive green from the
-  reference image.
-- Visual tone: warm editorial, modern marketplace, concierge trust.
-- Avoid: baby-shower pink, medical/hospital styling, generic startup gradients,
-  childish baby icons, and decorative blobs.
-- Imagery: generated standalone assets, not cropped from the reference
-  screenshot.
+## Current Scope
 
-## Active Repair Direction
+The current demo is a single-page front-end experience with:
 
-The first implementation worked technically but read oversized, low-density, and
-insufficiently close to the selected reference. The repair pass will:
+- A homepage for families seeking doula, postpartum, newborn, and night nanny
+  support.
+- Static provider/profile-style cards.
+- Static service category sections.
+- Static FAQ content.
+- English, Traditional Chinese, and Japanese copy variants.
+- Responsive desktop and mobile styling.
 
-- Rebalance the desktop hero so the header, headline, supporting copy, CTAs,
-  image, and match panel follow the reference's calmer scale and vertical
-  rhythm.
-- Turn the match panel into the primary product entry point with stronger field
-  grouping, refined icon treatment, clear selected values, and a concise trust
-  note.
-- Upgrade provider cards with richer marketplace signals: ratings, review
-  counts, rates, availability, location, languages, credentials, and short
-  family-facing review snippets.
-- Make the palette a real brand system using pale beige canvas, light clay
-  orange buttons/highlights, soft sage surfaces, and restrained olive action
-  states.
-- Reduce repetitive section rhythm below the fold by varying section density,
-  card treatments, trust details, and CTA layouts while keeping the reference
-  order.
-- Preserve the content rule: all visible copy must come from approved content
-  data, with no prompt, TODO, placeholder, or internal guidance text rendered.
+## Not Included
 
-Latest Open Design feedback fixes:
+This demo does not include:
 
-- Desktop header now has a soft readable treatment over the hero image so nav
-  labels do not sit directly on busy face/image areas.
-- Provider cards now use one repeated information system: area, languages,
-  response, review snippet, credentials, rate, and next opening occupy the same
-  slots across all four cards.
-- Mobile layout was rebuilt with a separate mobile hero image, compact match
-  form, unified compact provider cards, and the same beige/clay/olive brand
-  language as desktop.
-- Latest hero revision removes the full-width top fog, separates the compact
-  floating glass header from the image layer, and keeps the caregivers' faces
-  visible in the desktop hero.
-- Latest background revision removes the rejected pale-orange section band and
-  uses one warm pale-beige page canvas with white-beige floating section layers,
-  soft borders, and restrained shadows. Clay orange is kept for CTAs and small
-  accents only.
-- Header language controls switch the full page between English, Traditional
-  Chinese, and Japanese through the approved content source.
-- Latest mobile polish revision turns the Trust and How matching works sections
-  into compact 2-by-2 mobile grids with shorter approved copy, reducing vertical
-  waste while keeping the same desktop section structure.
-- Buttons and small interactive cards now have restrained micro-interactions:
-  hover lift, color or shadow feedback, focus rings, active press feedback, and
-  reduced-motion support.
-- Latest navigation/footer revision makes desktop header links a pure in-page
-  ordered table of contents: Find Support, How It Works, For Providers,
-  Resources, and About Us. Each link targets the matching lower-page section
-  with scroll offset for the floating header.
-- Mobile footer was rebuilt into a compact brand block, two-column link area,
-  compressed newsletter form, and smaller legal row instead of the previous
-  oversized single-column stack.
-- Latest logo revision uses the selected first GPTIMG logo concept as a
-  transparent PNG brand mark. Header, process-step badges, and footer now
-  reference this raster asset instead of the previous hand-drawn CSS/SVG-style
-  arch mark.
-- Latest logo spacing pass slightly reduces the header and footer PNG mark size
-  so the mark has more breathing room inside the floating header and footer
-  brand block.
-- Latest provider/card polish keeps desktop provider cards aligned but reduces
-  the visible pill density, while mobile provider cards now show only portrait,
-  name, role, rating, area, rate, and one request CTA.
-- Latest mobile care-category polish changes the full vertical stack into a
-  horizontal snap row that keeps all categories available without stretching the
-  page.
-- Latest FAQ polish replaces static buttons with localized accordion questions
-  and answers that expand and collapse with a restrained transition.
-- Latest Japanese provider-card fix constrains the desktop title row so review
-  counts remain inside the card at narrower desktop widths.
-- Production launch created private GitHub repo `nakamotosai/doula`, connected
-  Cloudflare Pages project `doula` to the GitHub `main` branch, and bound
-  `doula.saaaai.com` as the production domain.
-- Project closeout added Doula to the public `saaaai.com` project list with a
-  live link to `https://doula.saaaai.com/`.
+- Backend database
+- Lead submission workflow
+- Admin dashboard
+- Caregiver onboarding system
+- Authentication
+- Payment integration
+- Real provider verification
+- Real-time availability
+- Production legal pages
 
-## Content Rule
+## Tech Stack
 
-Only approved user-facing copy may appear in the UI. Internal implementation
-notes, prompt text, TODO labels, placeholder copy, component descriptions, or
-assistant planning language must never be rendered on the page. If copy is
-missing, write final English copy in the content source first, then render it
-from there.
+- React
+- TypeScript
+- Vite
+- CSS
 
-## Current Non-Goals
+## Local Development
 
-- No real accounts, login, payments, provider onboarding workflow, backend, or
-  database.
-- No medical claims or clinical service promises.
-- No backend localization service; demo localization is static front-end
-  content for English, Traditional Chinese, and Japanese.
+Install dependencies:
 
-## Verification Contract
+```bash
+npm install
+```
 
-M0 is complete only when:
+Run the development server:
 
-- `npm run build` passes.
-- The page runs on a local/internal preview URL.
-- Desktop and mobile browser smoke checks pass.
-- The rendered page contains no implementation placeholder or internal guidance
-  text.
-- The homepage visually follows the selected reference structure and palette
-  closely enough for client demo review after the M0 repair pass.
+```bash
+npm run dev
+```
 
-## Current Preview
+Build the site:
 
-- Production URL: `https://doula.saaaai.com/`
-- Cloudflare Pages URL: `https://doula-bw3.pages.dev/`
-- GitHub source: `https://github.com/nakamotosai/doula`
-- Cloudflare Pages project: `doula`
-- HTTPS Tailnet preview: `https://vps-jp.tail4b5213.ts.net:5177/`
-- Preview service: `systemctl --user status doula-preview.service`
-- Preview backend: Python static server on `127.0.0.1:5176`, serving `dist/`
-- HTTPS proxy: `tailscale serve --https=5177 127.0.0.1:5176`
-- Desktop screenshot: `artifacts/acceptance/home-desktop-https-fixed.png`
-- Mobile full-page screenshot:
-  `artifacts/acceptance/home-mobile-https-fixed-scale1.png`
-- Latest desktop repair screenshot:
-  `artifacts/acceptance/home-desktop-open-design-fix-v1.png`
-- Latest desktop full-page repair screenshot:
-  `artifacts/acceptance/home-desktop-full-open-design-fix-v1.png`
-- Latest mobile full-page repair screenshot:
-  `artifacts/acceptance/home-mobile-open-design-fix-v1.png`
-- Latest floating-header desktop screenshot:
-  `artifacts/acceptance/home-desktop-floating-header-v1.png`
-- Latest floating-header mobile screenshot:
-  `artifacts/acceptance/home-mobile-floating-header-v1.png`
-- Background Scheme B verification used command checks only after the user asked
-  not to capture more screenshots.
-- Latest mobile compact-grid and interaction pass was verified with build,
-  lint, static copy scan, HTTPS probes, service health, and a non-screenshot
-  Chromium computed-style check at a 390px mobile viewport.
-- Latest navigation/footer pass was verified with build, lint, static copy
-  scan, HTTPS probes, service health, desktop Chromium header click checks, and
-  mobile Chromium computed-style checks.
-- Latest logo pass was verified with build, lint, static copy scan, HTTPS
-  probes, service health, and Chromium computed-size checks for desktop and
-  mobile header, step, and footer placements.
-- Latest Open Design final review uses current desktop and mobile full-page
-  screenshots:
-  `artifacts/acceptance/home-desktop-open-design-final-v1.png` and
-  `artifacts/acceptance/home-mobile-open-design-final-v1.png`.
-- Latest provider/care/FAQ polish was verified with build, lint, static copy
-  scan, HTTPS probes for English, Traditional Chinese, and Japanese, service
-  health, and Chromium CDP checks for mobile provider density, mobile care
-  horizontal scrolling, localized CTA containment, and FAQ accordion behavior.
-  No new screenshots were captured for this pass.
-- Latest Japanese provider overflow fix was verified with build, lint, static
-  copy scan, HTTPS Japanese probe, service health, and a Chromium CDP overflow
-  check at a 932px desktop viewport.
-- Production launch was verified with Cloudflare Pages deployment status,
-  GitHub repository privacy/source checks, custom-domain activation, DNS CNAME
-  checks, HTTPS probes for production English/Traditional Chinese/Japanese
-  routes, and non-screenshot Chromium checks on the production domain.
-- Closeout was verified with the public `saaaai.com` project-list deployment,
-  static JS checks, rebuilt CJK font subset, and a Chromium check confirming
-  the Doula row links to `https://doula.saaaai.com/`.
+```bash
+npm run build
+```
 
-## 接手提示
+Run lint checks:
 
-- Active track: `delivery-track`.
-- Active milestone: `M0-demo-homepage` is complete.
-- Current gate: `PASS`, project paused after production launch and closeout.
-- Current focus: demo homepage for a Western-style family care and doula
-  marketplace, localized in English, Traditional Chinese, and Japanese.
-- Production entry: `https://doula.saaaai.com/`.
-- Source repo: private GitHub repository `https://github.com/nakamotosai/doula`.
-- Deployment: Cloudflare Pages project `doula`, GitHub `main` branch sync,
-  build command `npm run build`, output directory `dist`.
-- Public index: `saaaai.com` project list includes `Doula` and links to
-  `https://doula.saaaai.com/`.
-- Next step: wait for user or client feedback; resume with a new milestone for
-  requested copy/design changes, real provider data, onboarding, backend, or
-  conversion tracking.
-- Pause reason: user confirmed the current demo is good enough for now.
-- Do not do yet: accounts, payments, provider onboarding backend, database,
-  medical claims, production forms, or dynamic localization service.
-- Key specs and tasks: `milestones/M0-demo-homepage/SPEC.md`,
-  `milestones/M0-demo-homepage/PLAN.md`, and
-  `milestones/M0-demo-homepage/TASKS.md`.
-- Recent verification: production `doula.saaaai.com` and `saaaai.com` listing
-  both return HTTP 200 and passed non-screenshot Chromium checks.
-- Residual risk: this is still a static demo; CTA/form flows are illustrative
-  anchors and do not submit real data.
+```bash
+npm run lint
+```
+
+## Production Use
+
+This repository can be used as a visual and technical starting point. Before it
+is used for a real business website, the demo content should be replaced with
+approved brand copy, verified service information, real contact workflows,
+privacy/legal documents, and production data handling.
