@@ -6,6 +6,18 @@ newborn care, and night nanny marketplace concept.
 The site is intended for design review, product discussion, and early client
 reference only. It is not a live care platform.
 
+## Project Status
+
+- Status: demo complete.
+- Repository visibility: public.
+- Live demo: `https://doula.saaaai.com/`
+- Source: `https://github.com/nakamotosai/doula`
+- Current handoff state: this repository is suitable as a public demo reference
+  and front-end starting point.
+
+No further work is currently planned in this repository unless a new production
+scope is defined.
+
 ## Demo Notice
 
 This project is a static demo. It shows what a future matching website could
@@ -102,3 +114,10 @@ This repository can be used as a visual and technical starting point. Before it
 is used for a real business website, the demo content should be replaced with
 approved brand copy, verified service information, real contact workflows,
 privacy/legal documents, and production data handling.
+
+## Next Production Step
+
+If this demo is converted into a real service website, start a new project scope
+for lead forms, data storage, caregiver onboarding, legal/privacy pages, and
+operational workflows. Those production features are intentionally outside the
+current demo.
